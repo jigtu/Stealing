@@ -1,0 +1,55 @@
+<!--pages/replenishEventinfor/replenishEventinfor.wxml-->
+<!--发案时间 -->
+
+<view class='messageTip'>发案时间与地点</view>
+<view class='mainbox'>
+  <view class='mains'>发案时间</view>
+  <view class='mainl'>
+    <view class='eventDate'>
+      <picker mode="date" value="{{eventDate}}"start="2000-09-01" end="2999-09-01" bindchange="eventDate">
+        <view class="picker">
+          {{eventDate}}
+        </view>
+      </picker>
+    </view>
+    <view class='eventTime'>
+      <picker bindchange="eventTimeChange" value="{{eventTimeindex}}" range="{{eventTimearray}}">
+        <view class="picker">
+          {{eventTimearray[eventTimeindex]}}时
+        </view>
+      </picker>
+    </view>
+    <view class='timeIcon'></view>
+  </view>
+</view>
+<!-- 发案地点  -->
+<view class='mainbox' bindtap='goMap'>
+  <view class='mains'>发案地点</view>
+  <view class='mainl'>
+  <view class='eventPlace'>
+     {{eventPlace}}
+  </view>
+   <view class='placeIcon'></view>
+  </view>
+</view>
+<!--其他信息  -->
+<view class='otherText'>
+    <textarea class='otherTextarea {{ mark == true ? "pos":""}}'  placeholder='发案具体地点.如：公园/小区/楼号/车次/航班号...' bindblur="otherTextarea"bindTap="otherArea" value='{{otherTextarea}}'></textarea>
+</view>
+<view class="btnbox">
+  <view class='btnLarge' bindtap='replenishStep'>提交补充信息</view>
+</view>
+<!--填写受害人联系方式  -->
+<view class='mark' wx:if="{{mark}}">
+  <view class='telOuter'>
+    <view class='telTitle'>
+      <image src='https://wap.cintel.com.cn/anti_theft/images/codeOK.png'></image>
+      <view>提交成功</view>
+    </view>
+    <view class='tel'>
+      <view class='callBack'>请输入警方回访联系电话</view>
+      <input class='telText' placeholder='警方回访联系电话'  bindinput='callbackTel' value="{{callbackTel}}"></input>
+      <cover-view class='alertBtn'bindtap='replenishSure'>确认</cover-view>
+    </view> 
+  </view>
+</view>

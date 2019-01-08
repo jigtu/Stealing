@@ -1,0 +1,36 @@
+<!--pages/myPolice/myPolice.wxml-->
+<scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view class='myPoliceTop'>
+  <view>别人帮您报警时，您可以通过【提取报警】来查看自己的报警详细情况。</view>
+</view>
+<view class='extractCode' bindtap='useCode'>提取报警信息</view>
+<!--有记录  -->
+ <view class='{{list?"show":"hide"}}'>
+  <block wx:for="{{myPoliceinfor}}">
+    <view class='myPoliceCon' data-index="{{index}}"bindtap='choiseindex'>
+    <view class='myPoliceBox'>
+      <image class="policeImg" src='{{item.policeImg}}'></image> 
+      <view class='policeInfor'>
+        <view>手机被盗</view>
+        <view class='policePeople'>
+          <view>报警人：{{item.alarmPeople}}</view>
+          <view>受害人：{{item.victimPeople}}</view>
+        </view>
+        <view class='policetime'>报警时间：{{item.time}}</view>
+        
+      </view>
+      <view class='policeStatus {{item.colorss}}'>
+        {{item.type}}
+      </view>
+    
+    </view>
+      
+    </view>
+  </block>
+</view> 
+<!--无记录  -->
+<view class='nolist {{list?"hide":"show"}}'>
+    <view class='nolistTip'>您目前没有报警记录哦</view>
+    <image  class='nolistImg'src='../../public/myPoliceNone.png'></image>
+</view>
+</scroll-view>

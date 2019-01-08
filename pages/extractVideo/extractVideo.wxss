@@ -1,0 +1,20 @@
+/* pages/extractVideo/extractVideo.wxss */
+
+.videoTip{
+  width: 100%;
+  height: 50rpx;
+  background: #ffeb10;
+}
+.videoTipText{
+  font-size: 26rpx;
+  color: #3c80e3;
+  text-align: center;
+  line-height: 50rpx;
+}
+.videoImg{
+  width: 378rpx;
+  height: 595rpx;
+  margin: 59rpx auto 72rpx;
+   background: url('https://wap.cintel.com.cn/anti_theft/images/videoSample.png') no-repeat;
+  background-size: 100% 100%; 
+}

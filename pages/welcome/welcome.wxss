@@ -1,0 +1,8 @@
+/* pages/welcome/welcome.wxss */
+
+.welcome{
+  width: 529rpx;
+  height: 536rpx;
+  display: block;
+  margin: 170rpx auto 0;
+}

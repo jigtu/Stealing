@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<!--轮播图  -->
+<view class='banna'>
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--我要报警  -->
+<view class='btnLarge' bindtap='police'>我要报警</view>
+<!--文章  -->
+<view class='article'>
+   <block wx:for="{{articleList}}">
+      <view class='articleCon' bindtap='detailInfor' data-index='{{index}}'>
+        <view class='articleL'>
+            <image  class='articleImg'src='{{item.logo}}'></image>
+        </view>
+        <view class=' articleR'>
+            <view>{{item.title}}</view>
+            <view class='articleDes'>{{item.describe}}</view>
+        </view>
+      </view>
+   </block>
+</view>
+<!--mark  -->
+<view class='mark' wx:if='{{mark}}'>
+  <view class='tipsOuter'>
+    <view class='tipsTitle'>公安机关提示</view>
+    <view class='tipsCon'>
+      <view wx:for='{{mesList}}' class='meslist'>
+        <view class='tipsnum'>
+          {{item.num}}
+        </view>
+        {{item.con}}
+      </view> 
+      <view class="checkBox" bindtap='changecheck'>
+      <view class='check_icon {{checkmain == true ? "surecheck" : "notcheck"}}'></view>
+      <view>本人已阅读上述条款，并承诺报警情况属实。</view>
+    </view>
+    </view>
+    <view class="tipsBtn {{checkmain == true ? 'able':'disabled'}} " bindtap='callPolice'>同意</view>
+  </view>
+  <image class='tipClose' bindtap='closeTip' src='../../public/tipClose.png'></image>
+</view>
+
+
+
+
+
+

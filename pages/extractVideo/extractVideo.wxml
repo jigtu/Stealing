@@ -1,0 +1,21 @@
+<!--pages/extractVideo/extractVideo.wxml-->
+<!--上方导航栏  -->
+<view class='maintopTwo'>
+  <view class='authIcon'>
+  </view>
+  <view class='lineTwo'>
+  </view>
+  <view class='extractIcon'>
+  </view> 
+</view>
+<view class='videoTip'>
+  <view class='videoTipText'>根据公安部规定，提取人必须进行身份验证</view>
+</view>
+<view class='videoImg'></view>
+<!--视频验证  -->
+<view class='btnLarge' bindtap='takeView'>点击启动摄像头</view>
+<!--mark-->
+<view class='mark' wx:if="{{mark}}"></view>
+
+
+

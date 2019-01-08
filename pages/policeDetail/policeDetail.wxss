@@ -1,0 +1,45 @@
+/* pages/policeDetail/policeDetail.wxss */
+.con{
+  height: 100%;
+  padding-top:60rpx;
+  overflow: hidden;
+}
+.policeDetail{
+  width: 90%;
+  height: auto;
+  margin: 20rpx auto;
+  display: flex;
+  font-size: 30rpx;
+  overflow: hidden;
+
+}
+.policeTime{
+  width: 53%;
+  float: left;
+}
+.policeCon{
+  width: 47%;
+  float: left;
+}
+
+.btnBox{
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+.btnCenter{
+  width: 303rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #3c80e3;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  margin: 50rpx auto 0;
+}
+.disabled{
+  background: #ccc;
+  color: #999;
+}

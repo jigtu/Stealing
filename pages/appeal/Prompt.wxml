@@ -1,0 +1,23 @@
+<!--mark-->
+<view class='mark' wx:if="{{mark}}"></view>
+<!--mark-->
+<view class='mark' wx:if='{{prompt}}'>
+  <view class='tipsOuter'>
+    <view class='tipsTitle'>公安机关提示</view>
+    <view class='tipsCon'>
+      <view wx:for='{{mesList}}' class='meslist'>
+        <view class='tipsnum'>
+          {{item.num}}
+        </view>
+        {{item.con}}
+      </view> 
+      <view class="checkBox" bindtap='changecheck'>
+      <view class='check_icon {{checkmain == true ? "surecheck" : "notcheck"}}'></view>
+      <view>本人已阅读上述条款，并承诺申诉情况属实。</view>
+    </view>
+    </view>
+    <view class="tipsBtn {{checkmain == true ? 'able':'disabled'}} " bindtap='callPolice'>同意</view>
+  </view>
+  <image class='tipClose'  bindtap='closeTip' src='../../public/tipClose.png'></image>
+</view>
+<view class='mark' wx:if="{{mark}}"></view>

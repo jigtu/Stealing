@@ -1,0 +1,11 @@
+<!--pages/article2/article2.wxml-->
+<view class='con'>
+  <view class='title'>手机被盗/抢/骗后咋办？</view>
+  <view class='secondTitle'>
+    <text class='time'>2018-04-11</text>
+    <text>手机金盾</text>
+  </view>
+  <image class='articleImg' src='https://wap.cintel.com.cn/anti_theft/images/articleLarge2.png'></image>
+  <view class='articleText'> 第一时间通过本应用或者110报警，并尽量详细的提供手机设备信息（如IMEI码，手机品牌型号等）便于民警查找和返还。</view>
+</view>
+

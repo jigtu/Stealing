@@ -1,0 +1,47 @@
+/* pages/policeTakeBackPhoto/policeTakeBackPhoto.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.topTip{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background: red;
+  z-index: 100;
+}
+.frontOuter{
+   width: 622rpx;
+  height: 923rpx;
+  position: fixed;
+  top:5%;
+  left: 50%;
+  margin-left: -311rpx;
+  /* background: url('https://wap.cintel.com.cn/anti_theft/images/backOuter.png') no-repeat;
+   background-size: 100% 100%; */
+}
+.bottomTip{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 130rpx;
+}
+
+/*按钮栏  */
+.btn{
+  width: 100%;
+  height: 120rpx;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+}
+.photoBtn{
+    width: 100rpx;
+    height: 100rpx;
+    margin:15rpx  auto;
+}

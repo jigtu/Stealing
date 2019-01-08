@@ -1,0 +1,59 @@
+/* pages/myaAppeal/myaAppea.wxss */
+/*我的申诉列表  */
+.top{
+  margin-top: 30rpx;
+}
+.myAppealCon{
+  width: 100%;
+  height: 181rpx;
+  background: #fff;
+  color:#000;
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  padding-left: 52rpx;
+}
+/*申诉设备 */
+.appealName{
+  margin-top: 37rpx;
+  font-size: 27rpx;
+  margin-bottom: 25rpx;
+  color: #000;
+}
+.appealInfo{
+  margin-left: 50rpx;
+}
+/*申诉原因  */
+.appealReason{
+  font-size: 22rpx;
+  color: #a3a3a3;
+  margin-bottom: 15rpx;
+}
+.appealTime{
+   font-size: 22rpx;
+  color: #a3a3a3;
+}
+.AppealListIcon image{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 39rpx;
+}
+.appealCon{
+  margin-left: 15rpx;
+}
+.hide{
+  display: none;
+}
+/*没有记录  */
+.nolist{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 80rpx;
+}
+.nolistImg{
+  width: 415rpx;
+  height: 555rpx;
+  margin-top:200rpx;
+}

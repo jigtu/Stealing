@@ -1,0 +1,12 @@
+<!--pages/article3/article3.wxml-->
+<view class='con'>
+  <view class='title'>什么是手机IMEI码?如何获取?</view>
+  <view class='secondTitle'>
+    <text class='time'>2018-04-11</text>
+    <text>手机金盾</text>
+  </view>
+  <image class='articleImg' src='https://wap.cintel.com.cn/anti_theft/images/articleLarge3.png'></image>
+  <view class='articleText'> IMEI码是国际移动识别码缩写，俗称手机串号，手机拨打*#06#，或者打开“设置-关于本机-IMEI”可看到IMEI码。</view>
+</view>
+
+

@@ -1,0 +1,97 @@
+<!--pages/policeEventinformation/policeEventinformation.wxml-->
+  <!--上方导航栏  -->
+<view class='maintop'>
+  <view class='authokIcon'>
+  </view>
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <view class='policeokIcon' bindtap='policeStep'>
+  </view>
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <view class='caseingIcon'>
+  </view>
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <view class='{{phoneType==true ? "facilityokIcon":"facilityIcon"}}' bindtap='phoneStep'>
+  </view>
+</view>
+<!--报警事由  -->
+<view class='messageTip'>请选择报警事由</view>
+<view class='mainbox'>
+  <radio-group class='policeType' bindchange='typeChange'>
+    <radio value='1' checked='{{type1}}'>手机被盗</radio>
+    <radio value='2' checked='{{type2}}'>手机被抢</radio>
+    <radio value='3' checked='{{type3}}'> 手机被骗</radio>
+  </radio-group>
+  </view>
+<!--失主姓名  -->
+<view class='messageTip losterOuter'>
+  <view>受害人信息</view>
+  <view class='check' bindtap='checkPeople'>
+    <view class=' checkimg {{checkmain == true ? "checked":"nocheck"}}'></view>
+    <view>报警人与受害人为同一人</view>
+  </view>
+</view>
+<view class='mainbox'>
+  <view class='mains'>受害人姓名</view>
+  <view class='mainl'>
+    <input class='maininput' placeholder='受害人姓名' bindinput='losterName' value='{{losterName}}'></input>
+  </view>
+</view>
+<!--受害人身份证  -->
+<view class='mainbox'>
+  <view class='mains'>受害人身份证号</view>
+  <view class='mainl'>
+    <input class='maininput' placeholder='受害人身份证号'bindinput="losterIdcard"value="{{losterIdcard}}"></input>
+  </view>
+</view>
+<!--发案时间 -->
+<view class='messageTip'>发案时间与地点</view>
+<view class='mainbox'>
+  <view class='mains'>发案时间</view>
+  <view class='mainl'>
+    <view class='eventDate'>
+      <picker mode="date" value="{{eventDate}}"start="2000-09-01" end="{{endTime}}" bindchange="eventDate">
+        <view class="picker">
+          {{eventDate}}
+        </view>
+      </picker>
+    </view>
+    <view class='eventTime'>
+      <picker bindchange="eventTimeChange" value="{{eventTimeindex}}" range="{{eventTimearray}}">
+        <view class="picker">
+          {{eventTimearray[eventTimeindex]}}时
+        </view>
+      </picker>
+    </view>
+    <view class='timeIcon'></view>
+  </view>
+</view>
+<!-- 发案地点  -->
+<view class='mainbox' bindtap='goMap'>
+  <view class='mains'>发案地点</view>
+  <view class='mainl'>
+  <view class='eventPlace'>
+    {{eventPlace}}
+    <!-- <picker mode="region" bindchange="eventPlaceChange" value="{{eventPlace}}" custom-item="{{customItems}}">
+      <view  class="picker">
+        {{eventPlace[0]}}{{eventPlace[1]}}{{eventPlace[2]}}
+      </view>
+    </picker> -->
+  </view>
+   <view class='placeIcon'></view>
+  </view>
+</view>
+<!--其他信息  -->
+<view class='otherText'>
+    <textarea class='otherTextarea' placeholder='发案具体地点.如：公园/小区/楼号/车次/航班号...' bindblur="otherTextarea"bindTap="otherArea" value='{{otherTextarea}}'></textarea>
+
+</view>
+
+<view class="btnbox">
+  <view class='btnLarge' bindtap='losterInforStep'>下一步</view>
+</view>

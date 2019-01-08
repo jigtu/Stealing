@@ -1,0 +1,54 @@
+<!--pages/revocationMyinformation/revocationMyinformation.wxml-->
+  <!--上方导航栏  -->
+<view class='maintopTwo'>
+  <view class='authokIcon'>
+  </view>
+  <view class='lineTwo'>
+  </view>
+  <view class='revocationokIcon'>
+  </view> 
+</view>
+<!--图片  -->
+<view class='imgbox'>
+  <block wx:for="{{imgarr}}">
+    <view class='imgs'>
+      <image class='imgt' src='{{item}}'></image>
+      <!-- <view class='imgb' data-url="{{item}}" bindtap='fdj'></view> -->
+    </view>
+  </block>
+</view>
+<!--姓名身份证号  -->
+<view class='messageTip'>请确认以下信息无误后提交</view>
+<view class='mainbox'>
+  <view class='mains'>撤销人姓名</view>
+  <view class='mainl'>
+    <input class='maininput' placeholder='报警人真实姓名'value="{{people_name}}"bindinput="policeUser"></input>
+  </view>
+</view>
+<view class='mainbox'>
+  <view class='mains'>撤销人身份证号</view>
+  <view class='mainl'>
+    <input class='maininput' placeholder='18位身份证号'value="{{people_idCard}}"bindinput="policeIdcard"></input>
+  </view>
+</view>
+<view class='mainbox'>
+  <view class='mains'>撤销人手机号</view>
+  <view class='mainl'>
+    <input class='maininput' placeholder='撤销人手机号'bindinput="policeTel"value="{{policeTel}}"></input>
+  </view>
+</view>
+<view class='mainbox2'>
+  <view class='mainl'>
+    <input class='maininput' placeholder-class="phcolor" placeholder='请填写撤销原因'value="{{reason}}"bindinput="reason"></input>
+  </view>
+</view>
+
+<!--提交  -->
+<view class="btnbox">
+  <view class='btnLarge' bindtap='userinforStep'>提交</view>
+</view>
+
+<!--mark-->
+ <view class='mark' wx:if="{{mark}}"></view> 
+
+

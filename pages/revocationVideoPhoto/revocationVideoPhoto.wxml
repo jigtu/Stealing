@@ -1,0 +1,11 @@
+<!--pages/revocationVideoPhoto/revocationVideoPhoto.wxml-->
+<camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 100%;">
+    <cover-view class="topTip "> 请拍摄正面免冠照片</cover-view>
+    <cover-image class="frontOuter" src='../../public/policeVideoPhoto.png'></cover-image>
+    <cover-view class='btn'>
+      <cover-image class='photoBtn' src='../../public/photoBtn.png' bindtap='takePhoto'></cover-image>
+    </cover-view>
+    <!--mark-->
+    <cover-view class='mark' wx:if="{{mark}}"></cover-view>
+  </camera>
+
