@@ -1,0 +1,11 @@
+<!--pages/article1/article1.wxml-->
+<view class='con'>
+  <view class='title'>什么是手机金盾？</view>
+  <view class='secondTitle'>
+    <text class='time'>2018-04-11</text>
+    <text>手机金盾</text>
+  </view>
+  <image class='articleImg' src='https://www.wxjingtu.top/image/articleLarge1.png'></image>
+  <view class='articleText'>手机金盾是公安部、工信部联合推出的打击手机被盗、被抢、被骗案件的便民应用，方便群众报警、查询验证被盗抢手机等。</view>
+</view>
+

@@ -1,0 +1,140 @@
+/* pages/myPolice/myPolice.wxss */
+.myPoliceTop{
+  width: 100%;
+  height: 100rpx;
+  background: #ffeb10;
+  overflow: hidden;
+}
+.myPoliceTop view{
+  width: 90%;
+  margin:10rpx auto 0;
+  font-size: 26rpx;
+  color: #3c80e3;
+  text-align: left;
+  line-height: 40rpx;
+}
+/*使用提取码  */
+.extractCode{
+  width: 640rpx;
+  height: 84rpx;
+  background: #1e4071;
+  margin: 40rpx auto;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 34rpx;
+}
+/*mark  */
+.mark{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: url('https://www.wxjingtu.top/image/bg.png') no-repeat;
+  background-size: 100% 100%;
+  z-index:1000;
+}
+.extractCodeShow{
+  width: 540rpx;
+  height: 400rpx;
+  background: #fff;
+  position: absolute;
+  top:20%;
+  left: 50%;
+  margin-left:-270rpx;
+}
+.extractCodeTitle{
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  color: #000;
+  text-align: center;
+}
+.extractCodeCon{
+  width: 80%;
+  margin: 0 auto 30rpx;
+  font-size: 34rpx;
+  text-indent: 10rpx;
+}
+.extractCodeCon input{
+  height: 64rpx;
+  border: 1rpx solid #000;
+  color: #000;
+  text-indent: 20rpx;
+  font-size: 34rpx;
+  border-radius: 10rpx;
+}
+.victimIdcard{
+  width: 100%;
+  margin: 0 auto 20rpx;
+}
+.code{
+  width: 60%;
+}
+
+
+
+/*我的报警列表  */
+.myPoliceCon{
+  width: 100%;
+  height: 181rpx;
+  background: #fff;
+  color:#000;
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.myPoliceBox{
+  width: 92%;
+  height: 100%;
+  margin: 0 40rpx;
+  display: flex;
+  align-items: center;
+}
+.policeImg{
+  width: 104rpx;
+  height: 104rpx;
+  justify-content: center;
+  align-items: center;
+}
+.policeInfor{
+  width:400rpx;
+  height: 130rpx;
+  margin: 0 40rpx;
+}
+.policePeople{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin:10rpx 0;
+  font-size: 24rpx;
+  justify-content: space-between;
+}
+.policetime{
+  font-size: 24rpx;
+  color: #b0b0b0;
+}
+.policeStatus{
+  margin-top:-90rpx;
+}
+/*没有记录  */
+.nolist{
+  width: 100%;
+  text-align: center;
+  position: absolute; position: absolute;
+  top: 300rpx;
+}
+.nolistImg{
+  width: 415rpx;
+  height: 555rpx;
+  margin-top:200rpx;
+}
+
+.green{
+  color: #3ac02f;
+}
+.orange{
+  color: #f07c36;
+}
+.blue{
+  color: #3c80e3;
+}

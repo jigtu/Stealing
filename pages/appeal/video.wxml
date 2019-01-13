@@ -1,0 +1,24 @@
+<!--pages/policeVideo/policeVideo.wxml-->
+<!--上方导航栏  -->
+<view class='maintop top'>
+<!--身份认证未完成  -->
+  <view class='authIcon'></view>
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <!--申诉人初始化  -->
+  <view class='InitialcomplainantIcon'></view> 
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <!--申诉信息初始化  -->
+  <view class='InitialcomplaintIcon'></view>
+</view>
+
+<!--视频认证部分  -->
+<view class='videoTip' >
+  <view class='videoTipText' >根据公安部规定，申诉人必须进行身份验证</view>
+</view>
+<view class='videoImg' ></view>
+<!--视频验证按钮  -->
+<view class='btnLarge' bindtap='takeView' >点击启动摄像头</view>

@@ -1,0 +1,32 @@
+<!--pages/myaAppeal/myaAppea.wxml-->
+  <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" > 
+  <view class='myAppeal {{list?"show":"hide"}}'> 
+    <block wx:for="{{myAppealinfor}}" wx:key="index" wx:for-index="index">
+      <view class='myAppealCon {{index==0?"top":""}}' data-index="{{index}}" bindtap='choiseindex'>
+        <view class='AppealListIcon'><image src='../../public/AppealListIcon.png'/></view>
+      <view class='appealInfo'> 
+      <view class='appealName'>
+        <text>{{item.reason}}</text>
+        </view>
+
+        <view class='appealReason'>
+          <text>申诉时间:</text>
+        <text>{{item.time}}</text>
+        </view>
+
+        <view class='appealTime'>
+          <text>手机型号:</text>
+        <text>{{item.name}}</text>
+        </view>
+
+        </view>
+
+      </view>
+    </block>
+  </view>
+  <!--无记录  -->
+  <view class='nolist {{list?"hide":"show"}}'>
+      <view class='nolistTip'>您目前没有申诉记录哦</view>
+      <image  class='nolistImg'src='../../public/myPoliceNone.png'></image>
+  </view>
+</scroll-view> 

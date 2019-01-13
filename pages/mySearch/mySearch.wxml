@@ -1,0 +1,28 @@
+<!--pages/mySearch/mySearch.wxml-->
+<view class='mySearch hide{{!list?"show":""}}'>
+  <block wx:for="{{mySearchinfor}}">
+    <view class='mySearchCon' data-index="{{index}}"bindtap='choiseindex'>
+      <view class='searchTitle'>
+        <view class='searchName'>手机串号 {{item.name}}</view>
+        <view class='searchStatus'>{{item.status}}</view>
+      </view>
+      
+      <view class='searchTime'>
+        <text>查询时间:</text>
+        <view class='searchCon'>{{item.time}}</view>
+      </view>
+      <view class='searchResult'>
+        <text>查询结果:</text>
+        <view class='searchlCon'>{{item.result}}</view>
+      </view>
+    </view>
+  </block>
+
+
+</view>
+
+<!--无记录  -->
+<view class='nolist hide{{list?"show":""}}'>
+    <view class='nolistTip'>您目前没有报警记录哦</view>
+    <image  class='nolistImg'src='../../public/myPoliceNone.png'></image>
+</view>

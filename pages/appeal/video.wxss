@@ -1,0 +1,465 @@
+
+.videoTip{
+  width: 100%;
+  height: 50rpx;
+  background: #ffeb10;
+}
+.top{
+  justify-content: center;
+}
+.btnbox{
+  background: url('https://www.wxjingtu.top/image/bg.png') no-repeat;
+  background-size: 100% 100%;
+  height: 130rpx;
+}
+.videoTipText{
+  font-size: 26rpx;
+  color: #3c80e3;
+  text-align: center;
+  line-height: 50rpx;
+}
+.videoImg{
+  width: 378rpx;
+  height: 595rpx;
+  margin: 59rpx auto 72rpx;
+   background: url('https://www.wxjingtu.top/image/videoSample.png') no-repeat;
+  background-size: 100% 100%; 
+}
+
+
+.backPhoto{
+  width: 700rpx;
+  height: 394rpx;
+  margin: 20rpx auto;
+  background: #ccc;
+  position: relative;
+}
+.frontPhoto{
+    width: 700rpx;
+  height: 394rpx;
+  margin: 20rpx auto;
+  background: #ccc;
+  position: relative;
+}
+
+.top{
+  justify-content: center;
+}
+image{
+  height: 100%;
+  width:100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.backPhoto .frontPhotoImge{
+     display: inline-block;
+   width: 350rpx;
+   height: 197rpx;
+ overflow: hidden;
+}
+
+.frontPhoto .frontPhotoImge{
+   display: inline-block;
+   width: 350rpx;
+   height: 197rpx;
+ overflow: hidden;
+}
+
+
+.changed{
+  height: 700rpx;
+  width: 394rpx;
+}
+.nochange{
+  width: 700rpx;
+  height: 394rpx;
+}
+.takePhoto{
+  width: 154rpx;
+  height: 154rpx;
+  position: absolute;
+  top:30%;
+  left: 50%;
+  margin-left: -77rpx;
+}
+.disabled{
+  background: #ccc;
+}
+.able{
+  background: #fff;
+}
+
+/*拍摄正面样式  */
+.topTip{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background: red;
+  z-index: 100;
+}
+.frontOuter{
+  width: 620rpx;
+  height: 921rpx;
+  position: fixed;
+  top:6%;
+  left: 50%;
+  margin-left: -310rpx;
+}
+.bottomTip{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 130rpx;
+}
+
+.btn{
+  width: 100%;
+  height: 120rpx;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+}
+.photoBtn{
+    width: 100rpx;
+    height: 100rpx;
+    margin:15rpx  auto;
+}
+
+/*申诉人信息和申诉信息样式  */
+.titles{
+  width: 100%;
+  height: 80rpx;
+  text-align: left;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  padding-left: 5%;
+  font-size: 30rpx;
+}
+.imageSBox{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top:46rpx;
+  display: flex;
+}
+.imageS image{
+  display: block;
+  width: 230rpx;
+  height: 307rpx;
+}
+.imgbox{
+  width: 100%;
+  overflow: hidden;
+  margin-top:46rpx;
+  display: flex;
+}
+
+
+
+.messageTip{
+  color: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+}
+.Serialbox{
+   width: 100%;
+  background: #fff;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.MobilephoneIMEI{
+  color: #333;
+  text-indent: 32rpx;
+  font-size: 35rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 33%;
+  text-align: left;
+}
+.MobilephoneInput{
+  font-size: 35rpx;
+  line-height: 80rpx;
+  width: 60%;
+  margin-right: 10rpx;
+}
+
+.Serialbox image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 26rpx;
+}
+.Serialbox input{
+  font-size: 35rpx;
+  color: #333;
+  text-align: left;
+}
+
+.mainbox{
+  width: 100%;
+  background: #fff;
+  height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  line-height: 80rpx;
+  display: flex;
+}
+.Placepurchasebox{
+  width: 100%;
+  background: #fff;
+  height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  line-height: 80rpx;
+  display: flex;
+  color: #333;
+  position: relative;
+}
+ .Placepurchasetext1{
+  width:32%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: left;
+  text-indent: 32rpx;
+  color: #000;
+  font-size: 35rpx;
+}
+.Placepurchasetext2{
+  font-size: 35rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #000;
+  text-align: left;
+}
+
+
+.mains{
+  width:33%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  text-align: left;
+  text-indent: 32rpx;
+  color: #000;
+}
+.mainsTime{
+  width:32%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  text-align: left;
+  text-indent: 32rpx;
+  color: #000;
+}
+.mainl{
+  width:67%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.OtherInput{
+  width:100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  padding-left: 28rpx;
+}
+.maininput{
+  width:100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  display: block;
+  text-align: left;
+  color: #000;
+}
+/*遮罩  */
+.mark{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index:1000;
+
+}
+/*提示  */
+.tipsOuter{
+  width: 650rpx;
+  height: 450rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  position: fixed;
+  top:20%;
+  left: 50%;
+  margin-left: -325rpx;
+}
+.tipsBtn{
+  width: 534rpx;
+  height: 84rpx;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  line-height: 84rpx;
+  margin: 50rpx auto;
+  background: rgb(60,128,227);
+  font-size: 30rpx;
+}
+.tipsTitle{
+  text-align: center;
+  margin:47rpx 0 36rpx;
+  color: #3c80e3;
+}
+.tipsCon{
+  width: 580rpx;
+  font-size: 26rpx;
+  margin: 0 auto;
+  color: #5e5e5e;
+  overflow: hidden;
+}
+.meslist{
+  display: flex;
+  margin-bottom: 10rpx;
+  overflow: hidden;
+}
+.tipsnum{
+  margin-right: 10rpx;
+}
+
+.inputtop{
+  margin-top: 20rpx;
+}
+.mainbox{
+  width: 100%;
+  background: #fff;
+  height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+.bottomarrow{
+  right: 30rpx;
+  top: 24rpx;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top:20rpx solid #333;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent; 
+}
+.toparrow{
+    right: 30rpx;
+  top: 24rpx;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom:20rpx solid #333;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent; 
+}
+
+.picker{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #000;
+  text-align: left;
+}
+.Otherpicker{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #999;
+  text-align: left;
+  text-indent: 23rpx;
+}
+.blackfont{
+  color: #000;
+}
+.messageTip{
+  width: 93%;
+  margin: 50rpx auto 20rpx;
+  font-size: 32rpx;
+}
+.appealImgBox{
+  width:93%;
+  margin: 0 auto;
+  display: flex;
+}
+.appealImg{
+  width: 340rpx;
+  height: 230rpx;
+  background: #e6e6e6;
+  display:flex;
+  align-items:center;
+  margin:0 10rpx;
+  border-radius: 5rpx;
+  position: relative;
+}
+.appealImgDetail{
+  position: absolute;
+  width: 332rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background: rgba(255, 11, 11, 0.5);
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+.Shootingsuccess image{
+  position: absolute;
+  display: block;
+  width: 78rpx;
+  height: 54rpx;
+  top: 70rpx;
+  left: 140rpx;
+}
+.appealImg2{
+  width: 340rpx;
+  height: 230rpx;
+  background: #e6e6e6;
+  align-items:center;
+  margin:0 10rpx;
+  border-radius: 5rpx;
+}
+.addimg{
+  width: 85rpx;
+  height: 85rpx;
+  margin: auto;
+}
+.addimg2{
+    width: 85rpx;
+    height: 85rpx;
+    margin: 70rpx auto;
+}
+.imgShow{
+  width: 100%;
+  height: 100%;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+
+
+
+
+
+
+ 
+
+
+

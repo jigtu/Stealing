@@ -1,0 +1,20 @@
+<!--pages/queryPhoto/queryPhoto.wxml-->
+
+  <view class='scanTip'>
+  将IMEI码/串号放入框内，按拍照按钮
+  <view class='imeiTip'></view> 
+  </view>
+  <view class='queryMark'>
+    <view class='scanCamera'>
+      <image wx:if="{{photoType ==1}}" src='{{imgUrl}}'></image>
+      <camera wx:if="{{photoType !=1}}" device-position="back" flash="off" binderror="error" style="width: 100%; height: 100%;"></camera>
+    </view>
+    
+    <view class='scanExample'></view>
+    <view class='btnBox'>
+      <cover-image class="rePhoto" wx:if="{{photoType ==1}}"bindtap="rePhoto" src="https://www.wxjingtu.top/image/rephoto.png"></cover-image>
+      <cover-image class="photoBtn" wx:if="{{photoType !=1}}"bindtap="photoBtn" src="https://www.wxjingtu.top/image/photoBtn.png"></cover-image>
+      <cover-image class="photook" wx:if="{{photoType ==1}}"bindtap="photook" src="https://www.wxjingtu.top/image/photook.png"></cover-image>
+    </view>
+  </view> 
+

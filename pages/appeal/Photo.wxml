@@ -1,0 +1,61 @@
+<!--pages/policeVideo/policeVideo.wxml-->
+<!--上方导航栏  -->
+<view class='maintop top' wx:if="{{IDCarddisplay}}">
+<!--身份认证未完成  -->
+  <view class='authIcon'></view>
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <!--申诉人初始化  -->
+  <view class='InitialcomplainantIcon'></view> 
+  <view class='line'>
+    <image src='../../public/line.png'></image>
+  </view>
+  <!--申诉信息初始化  -->
+  <view class='InitialcomplaintIcon'></view>
+</view>
+
+
+<!--拍摄人脸照片  --> 
+<view class='backPhoto' wx:if="{{IDCarddisplay}}" >
+  <image src='{{IDCardimage1?IDCardimage1:"../../public/backPhoto.png"}}'  class='{{IDCardimage1? "changed":"nochange"}}'  animation='{{IDCardimage1?animationData:""}}'></image>
+  <cover-image wx:if="{{!IDCardimage1}}" bindtap='takeBackPhoto' data-Photo="1"  class='takePhoto' src='../../public/takePhoto.png'></cover-image>
+  <!--确定  -->
+   <cover-image wx:if='{{back == 2}}'  class='takePhoto' src='../../public/photook.png'></cover-image> 
+   <!--重拍  -->
+   <cover-image wx:if='{{back == 3}}'  class='takePhoto' src='../../public/rephoto.png'  bindtap='takeBackPhoto' data-Photo="1"></cover-image> 
+</view>
+
+<!--拍摄国徽一面照片  -->
+<view class='frontPhoto' wx:if="{{IDCarddisplay}}">
+  <image src='{{IDCardimage2?IDCardimage2:"../../public/frontPhoto.png"}}' class='{{IDCardimage2? "changed":"nochange"}}'  animation='{{IDCardimage2?animationData:""}}'></image>
+  <cover-image wx:if="{{!IDCardimage2}}"  bindtap='takeBackPhoto' data-Photo="2"  class='takePhoto' src='../../public/takePhoto.png'></cover-image>
+  <!--确定  -->
+   <cover-image wx:if='{{front == 2}}'  class='takePhoto' src='../../public/photook.png'></cover-image> 
+   <!--国徽重拍  -->
+   <cover-image wx:if='{{front == 3}}'  class='takePhoto' src='../../public/rephoto.png' bindtap='takeBackPhoto' data-Photo="2" ></cover-image> 
+</view>
+
+<view wx:if="{{IDCarddisplay}}" class='btnLarge {{next == true ? "able":"disabled"}}' bindtap='startAttestation'>下一步</view>
+
+<!--拍摄身份证正面 -->
+  <camera wx:if="{{Positivedisplay==1}}" device-position="back" flash="off" binderror="error" style="width: 100%; height: 100%;">
+    <cover-view class="frontOuter" ></cover-view>
+    <cover-image  class="frontOuter"  src='https://www.wxjingtu.top/image/frontOuter1.png'></cover-image>
+    <cover-view class='bottomTip'>请确保提示框内证件文字清晰可见</cover-view>
+    <cover-view class='btn'>
+      <cover-image class='photoBtn' data-cardshot="1" src='https://www.wxjingtu.top/image/photoBtn.png' bindtap='takePhoto'></cover-image>
+    </cover-view>
+  </camera>
+
+  <!--拍摄身份证反面 -->
+  <camera wx:if="{{Positivedisplay==2}}" device-position="back" flash="off" binderror="error" style="width: 100%; height: 100%;">
+    <cover-view class="frontOuter" ></cover-view>
+    <cover-image  class="frontOuter"  src='https://www.wxjingtu.top/image/backOuter1.png'></cover-image>
+    <cover-view class='bottomTip'>请确保提示框内证件文字清晰可见</cover-view>
+    <cover-view class='btn'>
+      <cover-image class='photoBtn' data-cardshot="2" src='https://www.wxjingtu.top/image/photoBtn.png' bindtap='takePhoto'></cover-image>
+    </cover-view>
+  </camera>
+
+  

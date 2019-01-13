@@ -1,0 +1,23 @@
+<!--pages/mine/mine.wxml-->
+<!--个人信息  -->
+<view class='userInfo'>
+    <image class='userHead'src='{{userInfo.avatarUrl}}'></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<!--我的列表  -->
+<view class='mineConBox'>
+     <block wx:for="{{mineConList}}" wx:key="wxkey1">
+      <view class='mineCon' data-index="{{index}}"bindtap='choiseindex'>
+        <view class='logo '>
+          <image class='{{item.logoWidth}}'src='{{item.logo}}'></image> 
+        </view>
+        <view class=' mineTitle {{index == 1 ?"noBottom" :""}}'>
+            <view >{{item.title}}</view>
+            <image class='otherIcon' src='../../public/oherIcon.png'></image>
+        </view>
+      </view>
+   </block>
+</view>
+<!--灰色填充  -->
+<!-- <view class='otherBg'>
+</view> -->
